@@ -1,0 +1,64 @@
+.wrapper {
+  transition: 0.3s ease-in-out;
+  :hover:not(.icon__box, .text, .date, .weather, .temperatures, .temperature, .icon) {
+    cursor: pointer;
+    background: #344243;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .day__card {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+
+    .icon__box {
+      background: #344243;
+      border-radius: 8px;
+      overflow: hidden;
+
+      .icon {
+        overflow: hidden;
+      }
+    }
+
+    .text {
+      margin-left: 10px;
+      text-align: start;
+      color: #bacecf;
+      border-radius: 0px !important;
+
+      .date {
+        font-size: 24px;
+      }
+
+      .weather {
+        opacity: 0.6;
+        font-size: 22px;
+      }
+    }
+
+    .temperatures {
+      display: flex;
+      flex-direction: row;
+      margin-left: 50px;
+      color: #bacecf;
+
+      &__wrapper {
+        border-left: 1px solid #344243;
+        padding-left: 10px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .temperature {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

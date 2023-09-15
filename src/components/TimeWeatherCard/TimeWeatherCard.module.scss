@@ -1,0 +1,51 @@
+.card {
+  width: fit-content;
+  max-width: 170px;
+  min-width: 150px;
+  padding: 5px;
+  backdrop-filter: blur(6px);
+  color: #fbffff;
+  text-align: center;
+  background: rgba(22, 33, 35, 0.7);
+  border-radius: 12px !important;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  @media only screen and (max-width: 600px) {
+    max-width: 100px;
+    height: 300px;
+  }
+
+  &__header {
+    font-size: 20px !important;
+    border-bottom: 2px solid #5d6769;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #fbffff;
+  }
+
+  &__icon {
+    width: 80px;
+    background: #344243;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  &__footer {
+    color: #fbffff;
+
+    .temperature {
+      font-size: 20px !important;
+    }
+
+    .description {
+      font-size: 18px !important;
+      margin-top: 10px;
+    }
+  }
+}
